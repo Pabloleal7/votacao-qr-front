@@ -4,7 +4,7 @@ import axios from "axios";
 import { Voto } from "../models/Voto";
 
 export class VotoService {
-  CATEGORIA_API_BASE_URL: string = "http://votacaoapi-env.eba-xvjwrpmr.us-east-1.elasticbeanstalk.com/voto";
+  CATEGORIA_API_BASE_URL: string = "http://votacaoapi-env-1.eba-zmdginzg.us-east-1.elasticbeanstalk.com/voto";
 
   findAll() {
     return axios.get<Voto[]>(this.CATEGORIA_API_BASE_URL+"/all", {
