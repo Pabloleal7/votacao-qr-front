@@ -26,11 +26,9 @@ function Votos() {
     <>
       <div className=" font-semibold text-white background-blue-light  mx-4">
         {votos?.map((v, i) => (
-          <div key={i.toString()}>
-            <p >
-              Projeto: {v.nome} Votos:{v.votos}
-            </p>
-          </div>
+          <>
+            Projeto: {v.nome} Votos:{v.votos}
+          </>
         ))}
       </div>
     </>
