@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Projeto } from "../../models/Projeto";
+import { Projeto } from "models/Projeto";
+
+
+import "../../pages/Cadastrar/style.css";
 import { ProjetoService } from "../../services/ProjetoService";
-import "../Cadastrar/style.css";
+
 
 function Cadastrar() {
   const [cadastrado, setCadastrado] = useState<Boolean>(false);
